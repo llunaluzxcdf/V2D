@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://b2lx2v4svai4u"]
+[gd_scene load_steps=2 format=3 uid="uid://b2lx2v4svai4u"]
+
+[ext_resource type="PackedScene" uid="uid://dokhel854ij58" path="res://02_scenes/02_objects/CartaPrueba.tscn" id="1_s6axy"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="CartaPrueba" parent="." instance=ExtResource("1_s6axy")]
+position = Vector2(-100, -64)
+
+[node name="CartaPrueba2" parent="." instance=ExtResource("1_s6axy")]
+position = Vector2(338, -96)
