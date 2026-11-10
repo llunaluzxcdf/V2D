@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://dokhel854ij58"]
+
+[ext_resource type="Texture2D" uid="uid://bot2vtpuxgk83" path="res://01_assets/icon.svg" id="1_6ldap"]
+[ext_resource type="Script" uid="uid://bnut06jmltb50" path="res://02_scenes/02_objects/carta_prueba.gd" id="1_37g00"]
+[ext_resource type="Texture2D" uid="uid://cpn0o27rh6rj7" path="res://01_assets/01_sprites/SobrePrueba.png" id="3_vur5s"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w3hub"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6ldap")
+}],
+"loop": false,
+"name": &"PruebaCarta",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_vur5s")
+}],
+"loop": false,
+"name": &"PruebaSobre",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_37g00"]
+size = Vector2(342, 421)
+
+[node name="CartaPrueba" type="Node2D"]
+script = ExtResource("1_37g00")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(480.5, 327)
+scale = Vector2(2.6796875, 3.28125)
+sprite_frames = SubResource("SpriteFrames_w3hub")
+animation = &"PruebaSobre"
+autoplay = "PruebaSobre"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(481, 327.5)
+shape = SubResource("RectangleShape2D_37g00")
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
