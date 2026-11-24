@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3m0p6ldpdfsb"]
+
+[ext_resource type="Script" uid="uid://lyt2ca1f13ck" path="res://02_scenes/02_objects/02_puzleRevolucion/puzle_revolucion_dia_1.gd" id="1_pfgqh"]
+[ext_resource type="Texture2D" uid="uid://ddatdhbi7ng21" path="res://01_assets/01_sprites/puzleRevolucionDia1.png" id="1_swan7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pfgqh"]
+
+[node name="puzleRevolucionDia1" type="Node2D"]
+
+[node name="object" type="Sprite2D" parent="."]
+texture = ExtResource("1_swan7")
+script = ExtResource("1_pfgqh")
+
+[node name="Button" type="Button" parent="object"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_right = 0.76000005
+anchor_bottom = 0.59800005
+offset_left = -99.0
+offset_top = -80.0
+offset_right = -96.72002
+offset_bottom = -78.27801
+
+[node name="Area2D" type="Area2D" parent="object"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="object/Area2D"]
+shape = SubResource("RectangleShape2D_pfgqh")
+
+[node name="ColorRect" type="ColorRect" parent="object/Area2D"]
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+color = Color(1, 0, 0, 0.45490196)
+
+[connection signal="button_down" from="object/Button" to="object" method="_on_button_button_down"]
+[connection signal="button_up" from="object/Button" to="object" method="_on_button_button_up"]
+[connection signal="area_entered" from="object/Area2D" to="object" method="_on_area_2d_area_entered"]
