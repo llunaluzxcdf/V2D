@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjunk70t3mgy4"
-path="res://.godot/imported/puzleRevolucionDia3.png-90f72947fd9b54eff976c358359805be.ctex"
+path="res://.godot/imported/puzleRevolucionDia3.png-21c74ab3d396ca0d4b74c71f88cd2138.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://01_assets/01_sprites/puzleRevolucionDia3.png"
-dest_files=["res://.godot/imported/puzleRevolucionDia3.png-90f72947fd9b54eff976c358359805be.ctex"]
+source_file="res://01_assets/01_sprites/00_placeholder/puzleRevolucionDia3.png"
+dest_files=["res://.godot/imported/puzleRevolucionDia3.png-21c74ab3d396ca0d4b74c71f88cd2138.ctex"]
 
 [params]
 

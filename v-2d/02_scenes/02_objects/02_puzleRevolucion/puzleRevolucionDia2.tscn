@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://scqe5avw30wq"]
 
 [ext_resource type="Script" uid="uid://lyt2ca1f13ck" path="res://02_scenes/02_objects/02_puzleRevolucion/puzle_revolucion_dia_1.gd" id="1_yb3mr"]
-[ext_resource type="Texture2D" uid="uid://cp6c0a7vfoad" path="res://01_assets/01_sprites/puzleRevolucionDia2.png" id="2_yb3mr"]
+[ext_resource type="Texture2D" uid="uid://cp6c0a7vfoad" path="res://01_assets/01_sprites/00_placeholder/puzleRevolucionDia2.png" id="2_yb3mr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yb3mr"]
 

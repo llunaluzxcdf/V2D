@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddatdhbi7ng21"
-path="res://.godot/imported/puzleRevolucionDia1.png-4f2827f91fc37a4ceda5e3304075cf36.ctex"
+uid="uid://cp6c0a7vfoad"
+path="res://.godot/imported/puzleRevolucionDia2.png-aa57bcada597212827250e7afdb9ad41.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://01_assets/01_sprites/puzleRevolucionDia1.png"
-dest_files=["res://.godot/imported/puzleRevolucionDia1.png-4f2827f91fc37a4ceda5e3304075cf36.ctex"]
+source_file="res://01_assets/01_sprites/00_placeholder/puzleRevolucionDia2.png"
+dest_files=["res://.godot/imported/puzleRevolucionDia2.png-aa57bcada597212827250e7afdb9ad41.ctex"]
 
 [params]
 
